@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+	<title>Chess Timer</title>
+	<meta name="description" content="  ">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="images/favicon.png">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,800" rel="stylesheet">
+
+    <link href="./css/style.css" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="darken">
+        <div class="popup">
+            <i id="popup_icon" class="material-icons">input</i>
+            <p class="popup_title">Input</p>
+            <p class="popup_message">Input number of minutes:</p>
+            <input id="minutes" placeholder="e.g. 30"> <br>
+            <button id="setTime">SUBMIT</button>
+        </div>
+    </div>
+
+    <div class="timers">
+        <div class="timer white">
+            <p id="white_timer">00:00</p>
+            <div class="progress">
+                <div class="green" id="white_progress"></div>
+            </div>
+        </div>
+        <div class="timer black">
+            <p id="black_timer">00:00</p>
+            <div class="progress">
+                <div class="green" id="black_progress"></div>
+            </div>
+        </div>
+
+        <button id="switch">SWITCH</button>
+    </div>
+
+    <!-- SCRIPTS SCRIPTS SCRIPTS -->
+
+    <script type="text/javascript" src="libs/jquery-3.1.0.min.js"></script>
+
+    <script type="text/javascript" src="scripts/style.js"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
+
+    <script type="text/javascript" src="scripts/livereload.js"></script>
+
+    </script>
+
+</body>
+</html>
