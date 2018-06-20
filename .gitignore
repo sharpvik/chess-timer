@@ -1,9 +1,9 @@
 /node_modules/
 
-/sass/
-
-/scripts/
-
 gulpfile.js
+
+gulper.bat
+
+livereload.bat
 
 package-lock.json

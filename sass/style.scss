@@ -1,0 +1,56 @@
+//  Variables
+//-----------
+$red: #F44336;
+$green: #1DE9B6;
+$light-grey: #DDD;
+$grey: #AAA;
+
+
+
+// Mixins
+//-------
+@mixin borrad($radius) {
+    border-radius: $radius;
+    -ms-border-radius: $radius;
+    -o-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -webkit-border-radius: $radius;
+}
+
+@mixin transition($what, $duration) {
+    transition: $what $duration;
+    -ms-transition: $what $duration;
+    -o-transition: $what $duration;
+    -moz-transition: $what $duration;
+    -webkit-transition: $what $duration;
+}
+
+@mixin shadow($moved) {
+    box-shadow: 0px $moved 5px 2px rgba(0, 0, 0, 0.2);
+    -ms-box-shadow: 0px $moved 5px 2px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 0px $moved 5px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px $moved 5px 2px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px $moved 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+
+
+// Styles
+//-------
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+
+
+// Imports
+//--------
+@import "timers";
+@import "popup";
